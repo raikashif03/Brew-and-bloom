@@ -141,7 +141,7 @@ export default function HomePage({ onNavigate, onAddToCart, onShowToast }) {
             <div className="hero-visual">
               <div className="hero-image-frame">
                 <img
-                  src="/images/cafe_interior.png"
+                  src="./images/cafe_interior.png"
                   alt="Brew & Bloom warm sunlit cafe interior with lush botanical plants"
                 />
                 <div className="hero-image-overlay"></div>
@@ -229,7 +229,7 @@ export default function HomePage({ onNavigate, onAddToCart, onShowToast }) {
             <div className="heritage-visual-col">
               <div className="barista-image-frame">
                 <img
-                  src="/images/latte_art.png"
+                  src="./images/latte_art.png"
                   alt="Barista pouring intricate latte art into ceramic cup"
                 />
                 <div className="barista-badge">

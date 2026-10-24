@@ -97,7 +97,7 @@ export default function MenuAndMediaPage({ onAddToCart, onShowToast }) {
       <section className="relative w-full bg-[#3E2723] text-white overflow-hidden py-16 sm:py-24 border-b border-[#C68642]/30">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
-          style={{ backgroundImage: `url('/images/pour_over.png')` }}
+          style={{ backgroundImage: `url('./images/pour_over.png')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#271310] via-[#3E2723]/90 to-[#271310]"></div>
 
@@ -209,7 +209,7 @@ export default function MenuAndMediaPage({ onAddToCart, onShowToast }) {
           <div className="flex flex-col bg-white dark:bg-[#241c19] rounded-3xl overflow-hidden shadow-sm border border-[#3e2723]/10 dark:border-white/10 group">
             <div className="relative aspect-video w-full bg-[#271310] overflow-hidden flex items-center justify-center">
               <img
-                src="/images/pour_over.png"
+                src="./images/pour_over.png"
                 alt="Video preview of barista pour over"
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
               />
@@ -247,7 +247,7 @@ export default function MenuAndMediaPage({ onAddToCart, onShowToast }) {
           <figure className="flex flex-col bg-white dark:bg-[#241c19] rounded-3xl overflow-hidden shadow-sm border border-[#3e2723]/10 dark:border-white/10 m-0 group">
             <div className="aspect-video w-full overflow-hidden bg-[#ebe1d3]">
               <img
-                src="/images/iced_coffee_counter.png"
+                src="./images/iced_coffee_counter.png"
                 alt="Specialty cold brews and pour-over setup on marble counter"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -484,7 +484,7 @@ export default function MenuAndMediaPage({ onAddToCart, onShowToast }) {
             <div className="p-6 bg-[#fcf2e4] dark:bg-[#2b221f] rounded-3xl border-2 border-dashed border-[#885210]/30 flex flex-col sm:flex-row items-center gap-6">
               <div className="w-full sm:w-48 h-48 rounded-2xl overflow-hidden shrink-0 shadow-md">
                 <img
-                  src="/images/croissants.png"
+                  src="./images/croissants.png"
                   alt="Hearth pastry"
                   className="w-full h-full object-cover"
                 />
@@ -548,7 +548,7 @@ export default function MenuAndMediaPage({ onAddToCart, onShowToast }) {
             </div>
             <div className="relative aspect-video w-full bg-black flex items-center justify-center">
               <img
-                src="/images/pour_over.png"
+                src="./images/pour_over.png"
                 alt="Brewing"
                 className="w-full h-full object-cover opacity-90"
               />

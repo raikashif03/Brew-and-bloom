@@ -12,7 +12,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 01',
       span: 'lg:col-span-2 lg:row-span-2',
       aspect: 'aspect-square sm:aspect-auto sm:h-full min-h-[380px]',
-      src: '/images/cafe_interior.png',
+      src: './images/cafe_interior.png',
       description: 'Lush indoor monstera, fiddle-leaf figs, and white oak tables bathed in gentle Portland morning sunshine.'
     },
     {
@@ -23,7 +23,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 02',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/latte_art.png',
+      src: './images/latte_art.png',
       description: 'Velvety micro-foam textured precisely to 62°C poured onto single-origin espresso.'
     },
     {
@@ -34,7 +34,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 03',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/croissants.png',
+      src: './images/croissants.png',
       description: 'Flaky pastry laminations using Normandy cultured butter and whole organic flour.'
     },
     {
@@ -45,7 +45,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 04',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/pour_over.png',
+      src: './images/pour_over.png',
       description: '94°C extraction through lab-grade glass releasing aromatics of sweet bergamot and jasmine.'
     },
     {
@@ -56,7 +56,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 05',
       span: 'lg:col-span-2',
       aspect: 'aspect-[16/9]',
-      src: '/images/iced_coffee_counter.png',
+      src: './images/iced_coffee_counter.png',
       description: 'Apothecary corked bottles of dark cold drip, layered oat milk beverages, and fresh garden mint infusions.'
     },
     {
@@ -67,7 +67,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 06',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/friendly_barista.png',
+      src: './images/friendly_barista.png',
       description: 'Elena checking the cast-iron drum roast development and dialing the morning grinders.'
     },
     {
@@ -78,7 +78,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 07',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/avocado_toast.png',
+      src: './images/avocado_toast.png',
       description: 'Organic sourdough with soft-poached pasture eggs, edible microgreens, and chili sea salt.'
     },
     {
@@ -89,7 +89,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 08',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/latte_art.png',
+      src: './images/latte_art.png',
       description: 'Hand-thrown speckled stoneware cups created by local Portland ceramists.'
     },
     {
@@ -100,7 +100,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 09',
       span: 'lg:col-span-2',
       aspect: 'aspect-[16/9]',
-      src: '/images/cafe_interior.png',
+      src: './images/cafe_interior.png',
       description: 'Over 40 botanical varieties purifying the roastery air and creating a serene microclimate.'
     },
     {
@@ -111,7 +111,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 10',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/pour_over.png',
+      src: './images/pour_over.png',
       description: 'Freshly roasted carbon dioxide escaping during the gentle concentric water spiral.'
     },
     {
@@ -122,7 +122,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 11',
       span: 'lg:col-span-1',
       aspect: 'aspect-[4/5]',
-      src: '/images/croissants.png',
+      src: './images/croissants.png',
       description: 'Fresh cardamom twists, cinnamon knots, and caramelized Basque cheesecake slices.'
     },
     {
@@ -133,7 +133,7 @@ export default function PortfolioPage({ onOpenLightbox, onShowToast }) {
       plate: 'Plate 12',
       span: 'lg:col-span-2',
       aspect: 'aspect-[16/9]',
-      src: '/images/friendly_barista.png',
+      src: './images/friendly_barista.png',
       description: 'Guests gathering for Friday evening sensory coffee cupping and botanical bouquet creation.'
     }
   ];

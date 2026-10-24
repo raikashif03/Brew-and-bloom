@@ -29,21 +29,21 @@ export default function ContactPage({
       role: 'Co-Founder & Roaster',
       badge: 'Head Roaster',
       bio: 'Sourcing heirloom Ethiopian varietals and leading sensory cast-iron roast profiles.',
-      image: '/images/friendly_barista.png'
+      image: './images/friendly_barista.png'
     },
     {
       name: 'Marcus Vance',
       role: 'Cupping Specialist',
       badge: 'Q-Grader',
       bio: 'Certified Q-grader curating delicate pour-overs and water minerality chemistry.',
-      image: '/images/pour_over.png'
+      image: './images/pour_over.png'
     },
     {
       name: 'Chloe Lin',
       role: 'Pastry Chef & Botanist',
       badge: 'Botanist',
       bio: 'Crafting cardamom buns, edible bloom pairings, and living botanical flora arrangements.',
-      image: '/images/latte_art.png'
+      image: './images/latte_art.png'
     }
   ];
 
