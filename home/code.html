@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#3e2723",
+          "tertiary": "#001d06",
+          "tertiary-fixed-dim": "#abd0a9",
+          "surface-container": "#f7edde",
+          "surface-container-highest": "#ebe1d3",
+          "secondary-fixed-dim": "#ffb870",
+          "on-tertiary-container": "#799d79",
+          "surface-container-low": "#fcf2e4",
+          "primary-fixed": "#ffdad4",
+          "on-error": "#ffffff",
+          "on-secondary-fixed-variant": "#693c00",
+          "on-tertiary": "#ffffff",
+          "secondary-container": "#fdb56c",
+          "on-surface": "#1f1b13",
+          "inverse-surface": "#353027",
+          "secondary": "#885210",
+          "on-primary": "#ffffff",
+          "surface-dim": "#e2d9cb",
+          "on-surface-variant": "#504442",
+          "on-primary-container": "#ae8d87",
+          "background": "#fff8f2",
+          "surface": "#fff8f2",
+          "tertiary-fixed": "#c6edc4",
+          "outline": "#827472",
+          "surface-variant": "#ebe1d3",
+          "surface-tint": "#745853",
+          "on-primary-fixed": "#2b1613",
+          "tertiary-container": "#133318",
+          "primary": "#271310",
+          "on-primary-fixed-variant": "#5b403c",
+          "outline-variant": "#d3c3c0",
+          "secondary-fixed": "#ffdcbe",
+          "on-tertiary-fixed-variant": "#2e4e30",
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "on-background": "#1f1b13",
+          "on-tertiary-fixed": "#012108",
+          "inverse-on-surface": "#f9efe1",
+          "on-secondary-fixed": "#2c1600",
+          "surface-container-lowest": "#ffffff",
+          "error": "#ba1a1a",
+          "surface-container-high": "#f1e7d9",
+          "on-secondary": "#ffffff",
+          "inverse-primary": "#e3beb8",
+          "primary-fixed-dim": "#e3beb8",
+          "on-secondary-container": "#774401",
+          "surface-bright": "#fff8f2"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "margin": "2rem",
+          "margin-mobile": "1rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem"
+        },
+        "fontFamily": {
+          "label-md": ["DM Sans"],
+          "headline-sm": ["Playfair Display"],
+          "headline-md": ["Playfair Display"],
+          "headline-lg": ["Playfair Display"],
+          "headline-lg-mobile": ["Playfair Display"],
+          "body-sm": ["DM Sans"],
+          "body-md": ["DM Sans"],
+          "label-sm": ["DM Sans"],
+          "title-md": ["DM Sans"],
+          "display-lg-mobile": ["Playfair Display"],
+          "display-lg": ["Playfair Display"],
+          "body-lg": ["DM Sans"]
+        },
+        "fontSize": {
+          "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "headline-md": ["26px", {"lineHeight": "34px", "fontWeight": "600"}],
+          "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}],
+          "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+          "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-[#fff8f2]/95 backdrop-blur-md border-b border-[#3e2723]/10"><div class="h-20 max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><a class="flex items-center gap-2.5 cursor-pointer group" data-path="home" href="#"><svg class="w-6 h-6 text-[#885210] shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path><path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path><path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path><path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path></svg><span class="font-serif text-[20px] font-semibold text-[#271310] tracking-tight">Brew &amp; Bloom</span></a><nav class="hidden lg:flex items-center gap-1.5"><a aria-current="page" class="px-4 py-1.5 rounded-full bg-[#3e2723] font-medium text-body-sm transition-all shadow-sm" data-path="home" href="#" style="color: #AE8D87;">Home</a><a class="px-4 py-1.5 rounded-full text-[#3e2723]/80 hover:text-[#271310] hover:bg-[#3e2723]/5 font-medium text-body-sm transition-all" data-path="media" href="#">Media</a><a class="px-4 py-1.5 rounded-full text-[#3e2723]/80 hover:text-[#271310] hover:bg-[#3e2723]/5 font-medium text-body-sm transition-all" data-path="register" href="#">Register</a><a class="px-4 py-1.5 rounded-full text-[#3e2723]/80 hover:text-[#271310] hover:bg-[#3e2723]/5 font-medium text-body-sm transition-all" data-path="services" href="#">Services</a><a class="px-4 py-1.5 rounded-full text-[#3e2723]/80 hover:text-[#271310] hover:bg-[#3e2723]/5 font-medium text-body-sm transition-all" data-path="portfolio" href="#">Portfolio</a><a class="px-4 py-1.5 rounded-full text-[#3e2723]/80 hover:text-[#271310] hover:bg-[#3e2723]/5 font-medium text-body-sm transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><button aria-label="User account" class="w-9 h-9 rounded-full bg-[#271310] text-white flex items-center justify-center transition-colors hover:bg-[#3e2723] focus:outline-none shadow-sm"><span class="material-symbols-outlined text-[18px]">person</span></button></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full bg-surface-container-low overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-xl lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Text Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md z-10">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-tertiary-container/10 text-on-tertiary-container self-start">
+<span class="material-symbols-outlined text-[18px]">local_florist</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Botanical Coffee Sanctuary</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-primary tracking-tight leading-tight">
+            A Cozy Haven for Specialty Coffee &amp; Botanical Calm
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Ethically sourced single origins, small-batch pastries, and thoughtful spaces designed to inspire slow living and mindful sips.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center justify-center gap-space-xs px-8 py-3.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-md hover:bg-secondary/90 transition-all transform hover:-translate-y-0.5" data-path="services" href="#">
+<span class="">View Services</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-7 py-3 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" data-path="media" href="#">
+              Browse Menu
+            </a>
+</div>
+<!-- Feature micro-pills -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">eco</span>
+<span class="font-label-sm text-label-sm text-on-surface">100% Organic</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">search_off</span>
+<span class="font-label-sm text-label-sm text-on-surface">Small Batch</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">potted_plant</span>
+<span class="font-label-sm text-label-sm text-on-surface">Living Oasis</span>
+</div>
+</div>
+</div>
+<!-- Hero Image Canvas with Framing -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-highest aspect-[4/3] lg:aspect-[5/4]">
+<img alt="Brew &amp; Bloom cafe warm sunlit interior with wooden tables, lush plants, and barista at espresso machine" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrdnFF1QBlK2bIGaUOk6EpygD8-wfoMcoEv-n30YlBztUZclh_j0gFU-s5lvQudtvxMHFNxmCToGCijS6K1-5tjj1gew2jTVIj9rF3_YpAvxxTNV58mAumjswGpYn3Dd_2rNeAEVqLSV8g7MLPmfolO-VMi73dCW_ni7ZpiHnydsDX2o55ddhGhsb-uVeNCDeZOykDA0YmPIZs7_NVrYSR8PuZqazI56muSeUJ-Tzbi5N6d3HOJdzapA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-space-md bg-surface-container-lowest/95 backdrop-blur-sm rounded-xl shadow-md">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-primary">Sunlit Main Roastery</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Portland Flagship &amp; Living Green Wall</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[28px]">coffee</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Promotion Banner (Styled Highlight Box) -->
+<section class="w-full bg-surface-container py-space-md">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[24px]">redeem</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Weekday Morning Special</span>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+              Complimentary oat milk upgrade &amp; freshly baked biscotti every weekday morning before <strong class="text-primary font-bold">9:00 AM</strong>.
+            </p>
+</div>
+</div>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors shrink-0" data-path="register" href="#">
+<span class="">Claim with Stamp Card</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Story & Philosophy Section -->
+<section class="w-full bg-surface-container-lowest py-space-xl lg:py-24">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Our Heritage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary tracking-tight">
+            Our Story &amp; Philosophy
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Brew &amp; Bloom was born from a singular conviction: morning rituals should ground you, not rush you. Every single roast is
+            <strong class="text-primary font-semibold">hand-crafted with uncompromising care</strong> and enjoyed amidst
+            <em class="text-secondary font-serif">botanical serenity</em>.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            We partner with micro-lot farms across Oaxaca, Sidama, and Huila that adhere strictly to regenerative agroforestry. Surrounding our brew counters with over forty species of air-purifying tropicals, we cultivate an indoor micro-climate where fresh coffee steam meets lush jungle foliage.
+          </p>
+<!-- Quote Highlight -->
+<div class="p-space-lg bg-surface-container-low rounded-xl relative">
+<span class="material-symbols-outlined text-secondary/30 text-[40px] absolute top-2 right-4">format_quote</span>
+<blockquote class="font-headline-sm text-headline-sm text-primary italic mb-space-xs">
+              "We don't simply brew beans; we cultivate an ecosystem of slow craftsmanship, botanicals, and warm human hospitality."
+            </blockquote>
+<cite class="font-label-sm text-label-sm text-on-surface-variant not-italic font-bold">
+              — Elena Rostova, Co-founder &amp; Head Roaster
+            </cite>
+</div>
+</div>
+<!-- Featured Barista Image & Story Blurb -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container aspect-square">
+<img alt="Passionate barista pouring intricate latte art rosette into ceramic cup on wooden counter" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGZKHuFwcIX-hQri9Luk1FqjSkKfUEreCi1YV_vfCudA3kzgYMUYGP8c5lEXcpk9FJapUo1xEPCZMGCS97llh5LrPrbN2Y84ch08RgITk5mL0ebQCetg_FZqqDTVdV56KN-cmeOA0rZQkxBsuMgaNonyD3rilj-NYus1hYFeluAE-QpYjXHn4KCfmMRwkehvJBtyjnnaUgzusOHRGSpQ6kgoYeN7bvO1vWORA-jSVlmyMpdXNqxguUbw">
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Barista Select</span>
+</div>
+</div>
+<!-- Image Caption Box -->
+<div class="p-space-md bg-surface-container-high rounded-xl">
+<h3 class="font-title-md text-title-md text-primary mb-1">Single-Origin Velvet Pour</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every pour is calibrated to 93°C water temperature and dialed in every morning. We pair custom ceramic vessels from local potters with milk steamed to microscopic velvety microfoam.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Brew & Bloom -->
+
+<!-- Interactive Roasting Profile Infographic (Inline SVG Metric) -->
+
+<!-- Explore Our Cafe Section (6 Page Directory Cards) -->
+<section class="w-full bg-surface-container py-space-xl lg:py-24">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest font-semibold">Directory</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Explore Our Cafe</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Navigate our complete offerings, workshops, seasonal collections, and connect with our team.</p>
+</div>
+<!-- 6-card layout for all six pages -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Home -->
+<a class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col justify-between" data-path="home" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cottage</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Overview</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Home &amp; Sanctuary</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Welcome to Brew &amp; Bloom. Our mission, philosophy, daily specials, and seasonal focus points.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-secondary font-label-md text-label-md">
+<span class="">Visit Sanctuary</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 2: Menu and Media -->
+<a class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col justify-between" data-path="media" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Drink &amp; Taste</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Menu &amp; Media</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Explore our pour-overs, botanical mocktails, cold brews, and seasonal bakery selections.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-secondary font-label-md text-label-md">
+<span class="">Discover Menu</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 3: Register -->
+<a class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col justify-between" data-path="register" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">card_membership</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Membership</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Register &amp; Rewards</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Join the Bloom Collective for stamp cards, cupping sessions, and complimentary morning upgrades.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-secondary font-label-md text-label-md">
+<span class="">Join Collective</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 4: Services -->
+<a class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col justify-between" data-path="services" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">event_seat</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Workshops &amp; Space</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Cafe Services</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Private room bookings, barista brewing masterclasses, floral arranging workshops, and corporate pop-ups.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-secondary font-label-md text-label-md">
+<span class="">Explore Offerings</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 5: Portfolio / Gallery -->
+<a class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col justify-between" data-path="portfolio" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">photo_library</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Visual Stories</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Gallery &amp; Spaces</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              A photo archive of our greenhouse seating, latte art pours, vintage roasters, and community gatherings.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-secondary font-label-md text-label-md">
+<span class="">View Gallery</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 6: Contact -->
+<a class="group bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1 flex flex-col justify-between" data-path="contact" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">alternate_email</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Find Us</span>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Contact &amp; Hours</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Location details, operating hours, catering inquiries, and feedback directly to our team.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between text-secondary font-label-md text-label-md">
+<span class="">Get in Touch</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Invitation Strip -->
+<section class="w-full bg-primary text-on-primary py-space-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest font-semibold">The Botanical Dispatch</span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright tracking-tight">Stay Steeped in Good News</h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim">
+            Receive monthly invitations to private cuppings, seasonal bean arrivals, and plant-care workshops.
+          </p>
+</div>
+<div class="md:col-span-5">
+<form class="flex flex-col sm:flex-row gap-space-xs" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML='Subscribed ✓';">
+<input class="w-full px-4 py-3 rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="Enter your email address" required="" type="email">
+<button class="px-6 py-3 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary transition-colors shrink-0 font-bold" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-[#fbf3e7] text-on-surface border-t border-[#3e2723]/10 py-space-xl"><div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-2 mb-space-xs"><svg class="w-5 h-5 text-[#885210] shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path><path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path><path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path><path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path></svg><span class="font-serif text-[18px] font-semibold text-[#271310] tracking-tight">Brew &amp; Bloom</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Artisanal roasts &amp; botanical moments in every cup.</p><div class="flex items-center gap-space-sm text-on-surface-variant pt-space-xs"><a aria-label="Instagram" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors cursor-pointer" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="News" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors cursor-pointer" href="#"><span class="material-symbols-outlined text-[18px]">rss_feed</span></a><a aria-label="Share" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors cursor-pointer" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a></div></div><div class="flex flex-col gap-space-xs"><h4 class="font-title-md text-title-md text-primary mb-space-xs font-semibold">Visit Our Atelier</h4><p class="font-body-sm text-body-sm text-on-surface-variant">142 Blossom St, Portland, OR</p><p class="font-body-sm text-body-sm text-on-surface-variant">United States</p><p class="font-body-sm text-body-sm text-on-surface-variant pt-1">hello@brewandbloom.cafe</p></div><div class="flex flex-col gap-space-xs"><h4 class="font-title-md text-title-md text-primary mb-space-xs font-semibold">Opening Hours</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Mon – Fri: 7am – 6pm</p><p class="font-body-sm text-body-sm text-on-surface-variant">Sat – Sun: 8am – 7pm</p></div><div class="flex flex-col gap-space-xs"><h4 class="font-title-md text-title-md text-primary mb-space-xs font-semibold">Specialty Offerings</h4><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" data-path="media" href="#">Single Origin Pour-Overs</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="services" href="#">Seasonal Floral Subscriptions</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="services" href="#">Private Botanical Workshops</a></li></ul></div></div><div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin pt-space-lg border-t border-[#3e2723]/10 flex flex-col sm:flex-row items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="">© 2024 Brew &amp; Bloom. All rights reserved.</span><span class="">Crafted with warmth &amp; organic botanical reverence.</span></div></footer>
+
+
+</body></html>

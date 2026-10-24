@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew &amp; Bloom | Specialty Coffee &amp; Botanical Sanctuary</title>
+    <meta
+      name="description"
+      content="Brew &amp; Bloom - A cozy haven for artisanal single-origin coffee, botanical calmness, hearth-baked pastries, and slow living rituals."
+    />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23885210'><circle cx='12' cy='12' r='3'/><path d='M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z'/></svg>" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#271310",
+              "primary-container": "#3e2723",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#ae8d87",
+              "primary-fixed": "#ffdad4",
+              "primary-fixed-dim": "#e3beb8",
+              "on-primary-fixed": "#2b1613",
+              "secondary": "#885210",
+              "secondary-container": "#fdb56c",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#774401",
+              "secondary-fixed": "#ffdcbe",
+              "secondary-fixed-dim": "#ffb870",
+              "tertiary": "#001d06",
+              "tertiary-container": "#133318",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#799d79",
+              "tertiary-fixed": "#c6edc4",
+              "tertiary-fixed-dim": "#abd0a9",
+              "surface": "#fff8f2",
+              "surface-dim": "#e2d9cb",
+              "surface-bright": "#fff8f2",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#fcf2e4",
+              "surface-container": "#f7edde",
+              "surface-container-high": "#f1e7d9",
+              "surface-container-highest": "#ebe1d3",
+              "on-surface": "#1f1b13",
+              "on-surface-variant": "#504442",
+              "outline": "#827472",
+              "outline-variant": "#d3c3c0",
+              "surface-tint": "#745853",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "brand-caramel": "#C68642",
+              "brand-cream": "#F5EBDD",
+              "brand-espresso": "#3E2723",
+              "brand-sage": "#6B8E6B"
+            },
+            fontFamily: {
+              serif: ["Playfair Display", "Georgia", "serif"],
+              sans: ["DM Sans", "system-ui", "sans-serif"],
+              display: ["Playfair Display", "serif"],
+              body: ["DM Sans", "sans-serif"]
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              sm: "0.25rem",
+              md: "0.75rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px"
+            },
+            boxShadow: {
+              warm: "0 4px 16px -2px rgba(62, 39, 35, 0.08)",
+              "warm-lg": "0 8px 24px -4px rgba(62, 39, 35, 0.12)",
+              "warm-xl": "0 16px 36px -6px rgba(62, 39, 35, 0.16)"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-[#fff8f2] text-[#1f1b13] font-sans antialiased selection:bg-[#c68642]/30 selection:text-[#3e2723]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
